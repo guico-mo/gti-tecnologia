@@ -14,4 +14,8 @@
         margin: 0;
         margin-block: 14px;
     }
+
+    .container-wall{
+        min-height: 568px;
+    }
 }
