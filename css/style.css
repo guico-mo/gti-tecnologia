@@ -274,7 +274,7 @@ body{
 }
 
 .container-wall {
-    background: url("/media/wallpaper.jpg") no-repeat center;
+    background: url("media/wallpaper.jpg") no-repeat center;
     background-size: cover;
     padding-inline: 25px;
     padding-block: 35px;
