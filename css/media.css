@@ -1,0 +1,18 @@
+@media screen and (max-width: 700px){
+    .wall-text{
+        font-size: 44px;
+    }
+
+    .main-footer{
+        flex-direction: column;
+    }
+
+    #linha-footer {
+        height: 0;
+        width: 275px;
+        border-top: 1px solid var(--third-color);
+        margin: 0;
+        margin-top: 14px;
+        margin-bottom: 13px;
+    }
+}
