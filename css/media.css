@@ -4,7 +4,7 @@
     }
 
     .main-footer{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     #linha-footer {
@@ -12,7 +12,6 @@
         width: 275px;
         border-top: 1px solid var(--third-color);
         margin: 0;
-        margin-top: 14px;
-        margin-bottom: 13px;
+        margin-block: 14px;
     }
 }
