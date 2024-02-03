@@ -28,7 +28,6 @@ body{
 }
 .services-title{
     color: var(--third-color);
-    padding-left: 15px;
 }
 .services-text{
     color: var(--third-color);
@@ -63,8 +62,13 @@ body{
 .service:hover{
     background-color: #004C76;
 }
-.service:hover p, .service:hover h2{
-    color: #eeeeee;
+.services-title{
+    text-align: center;
+    font-size: 2.1em;
+}
+.service:hover .ul-list,
+.service:hover h1{
+    color: var(--primary-color);
 }
 .planos-card{
     display: flex;
@@ -85,9 +89,11 @@ body{
 .plano:hover{
     background-color: #004C76;
 }
-.plano:hover a, .plano:hover p, .plano:hover h2{
-    color: #eeeeee;
-} 
+.plano:hover .ul-list,
+.plano:hover h1,
+.plano:hover h3{
+    color: var(--primary-color);
+}
 .plano:hover a{
     background-color: #008BCA;
 }
@@ -111,8 +117,18 @@ body{
     text-align: center;
 }
 .plano-title{
+    text-align: center;
+    font-size: 2.3em;
+}
+.best{
+    text-align: center;
+    margin: 0;
+    font-weight: normal;
+    font-size: 21px;
+}
+.ul-list{
+    padding-block: 12px;
     color: var(--third-color);
-    padding-left: 15px;
 }
 .plano-text{
     color: var(--third-color);
@@ -190,8 +206,9 @@ body{
 }
 
 .warning{
-    font-size: 18px;
+    font-size: 20px;
     font-style: italic;
+    text-align: center;
 }
 .whatsapp-link{
     position: fixed;
@@ -215,7 +232,12 @@ body{
     background-color: #128C7E;
 }
 
-/* rodapé */
+footer{
+    background-color: var(--shade-back);
+    display: flex;
+    justify-content: center;
+}
+
 .main-footer{
     display: flex;
     align-items: center;
@@ -223,18 +245,14 @@ body{
     padding-inline: 15px;
     padding-block: 15px;
     margin-block: 6px;
-    color: var(--third-color);
+    color: #000000;
 }
 .main-footer a{
-    color: var(--third-color);
+    color: #000000;
     text-decoration: none;
 }
-.main-footer a:hover{
-    color: #004C76;
-    font-weight: bold;
-}
 .main-footer a:active{
-    color: var(--third-color);
+    color: #000000;
 }
 .links-footer a{
     display: flex;
@@ -252,7 +270,7 @@ body{
 }
 #linha-footer{
     height: 125px;
-    border-right: 1px solid var(--third-color);
+    border-right: 1px solid #000000;
     margin: 0px 30px;
 }
 .brand-footer{
@@ -269,8 +287,12 @@ body{
 .zap{
     margin-left: 5px;
 }
-.link-footer{
+.linkk-footer{
     transition: .3s;
+}
+.linkk-footer:hover{
+    color: #004C76;
+    font-weight: bold;
 }
 
 .container-wall {
@@ -308,3 +330,10 @@ h2{
 #portal{
     display: none;
 }
+/* .main-footer a{
+    transition: .3s;
+}
+.main-footer a:hover{
+    color: #004C76;
+    font-weight: bold;
+} */

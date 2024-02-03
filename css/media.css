@@ -1,4 +1,4 @@
-@media screen and (max-width: 700px){
+@media screen and (max-width: 720px){
     .wall-text{
         font-size: 36px;
     }
@@ -17,5 +17,16 @@
 
     .container-wall{
         min-height: 568px;
+    }
+}
+
+@media screen and (min-width: 1080px){
+    .service{
+        min-height: 320px;
+        max-height: 400px;
+    }
+    .plano{
+        min-height: 320px;
+        max-height: 400px;
     }
 }
