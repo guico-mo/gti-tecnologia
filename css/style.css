@@ -295,15 +295,6 @@ footer{
     font-weight: bold;
 }
 
-.container-wall {
-    background: url("wallpaper.jpg") no-repeat center;
-    background-size: cover;
-    padding-inline: 25px;
-    padding-block: 35px;
-    min-height: 484px;
-    width: 100%;
-}
-
 .wall-text {
     line-height: 1.2;
     color: white;

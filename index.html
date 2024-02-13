@@ -10,6 +10,16 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script defer src="js/script.js"></script>
     <script defer src="js/burger.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var currentYear = new Date().getFullYear();
+            var copyrightYearElement = document.getElementById('copyrightYear');
+
+            if (copyrightYearElement) {
+                copyrightYearElement.textContent = currentYear;
+            }
+        });
+    </script>
 
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
@@ -18,6 +28,7 @@
     <link rel="stylesheet" href="css/config.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="media/wallpaper.css">
 </head>
 
 <body>
@@ -33,7 +44,8 @@
                 <li><a href="#our-services">Nossos Diferenciais</a></li>
                 <!-- <li><a href="#cobertura">Cobertura</a></li> -->
                 <!-- <li><a href="#about-us">Sobre Nós</a></li> -->
-                <li id="portal"><a href="http://6efd063e8cb0.sn.mynetname.net:8050/central/login.php" target="_blank">Portal do Cliente</a></li>
+                <li id="portal"><a href="http://6efd063e8cb0.sn.mynetname.net:8050/central/login.php"
+                        target="_blank">Portal do Cliente</a></li>
             </ul>
         </div>
         <div class="access">
@@ -43,7 +55,7 @@
             </a>
         </div>
     </header>
-    <div class="container-wall">
+    <div class="wallpaper">
         <h1 class="wall-text">Bem-vindo à GTI Tecnologia, onde conectamos você ao mundo com <span
                 class="italic">velocidade, confiança e inovação.</span></h1>
     </div>
@@ -96,7 +108,8 @@
                 <a class="sign" href="https://wa.me/+557532212671" target="_blank">Contrate agora!</a>
             </div>
         </div>
-        <p class="warning">Oferecemos outras opções de velocidades para te atender. Consulte-nos para escolher aquela que melhor se adapte a você!</p>
+        <p class="warning">Oferecemos outras opções de velocidades para te atender. Consulte-nos para escolher aquela
+            que melhor se adapte a você!</p>
     </div>
     <div id="our-services" class="scroll-reveal our-services">
         <h1 class="title">Nossos Diferenciais</h1>
@@ -147,7 +160,7 @@
         <div class="main-footer">
             <div class="brand-footer">
                 <img src="media/logo.png" alt="GTI Tecnologia Logo" class="logo-footer">
-                <p>© 2023 Todos os direitos reservados.</p>
+                <p>&copy; <span id="copyrightYear">2022</span> Todos os direitos reservados.</p>
                 <a href="https://linktr.ee/guilherme.correia" target="_blank" class="linkk-footer">Desenvolvido por
                     Guilherme Correia.</a>
             </div>
@@ -188,39 +201,5 @@
         </div>
     </footer>
 </body>
-</html>
 
-<!-- <div id="cobertura" class="scroll-reveal cobertura">
-    <h1 class="title">Consulte a nossa área de cobertura</h1>
-    <div class="fields">
-        <div id="cepFields">
-            <form class="form">
-                <label for="cep">Digite seu CEP:</label><br>
-                <input type="text" id="cep" name="cep" required class="input" placeholder="apenas números"><br>
-                <input type="submit" value="Buscar" class="submit">
-            </form>
-        </div>
-        <div class="divisor">
-            <div class="linha"></div>
-            <p>ou</p>
-            <div class="linha"></div>
-        </div>
-        <div id="enderecoFields">
-            <form class="form">
-                <label for="rua">Endereço:</label><br>
-                <input type="text" id="rua" name="rua" required class="input"
-                    placeholder="rua, avenida, caminho..."><br>
-                <label for="numero">Número:</label><br>
-                <input type="text" id="numero" name="numero" required class="input" placeholder="número ou s/n"><br>
-                <label for="numero">Complemento:</label><br>
-                <input type="text" id="complemento" name="complemento" required class="input"
-                    placeholder="casa, apto., quadra..."><br>
-                <label for="numero">Bairro:</label><br>
-                <input type="text" id="bairro" name="bairro" required class="input"><br>
-                <label for="numero">Cidade:</label><br>
-                <input type="text" id="cidade" name="cidade" required class="input"><br>
-                <input type="submit" value="Buscar" class="submit">
-            </form>
-        </div>
-    </div>
-</div> -->
+</html>

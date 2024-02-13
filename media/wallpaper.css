@@ -1,0 +1,8 @@
+.wallpaper {
+    background: url("wallpaper.jpg") no-repeat center;
+    background-size: cover;
+    padding-inline: 25px;
+    padding-block: 35px;
+    min-height: 484px;
+    width: 100%;
+}
