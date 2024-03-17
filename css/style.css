@@ -64,7 +64,7 @@ body{
 }
 .services-title{
     text-align: center;
-    font-size: 2.1em;
+    font-size: 1.9em;
 }
 .service:hover .ul-list,
 .service:hover h1{
@@ -118,7 +118,8 @@ body{
 }
 .plano-title{
     text-align: center;
-    font-size: 2.3em;
+    font-size: 1.9em;
+    margin-top: 0;
 }
 .best{
     text-align: center;
@@ -206,7 +207,7 @@ body{
 }
 
 .warning{
-    font-size: 20px;
+    font-size: 23px;
     font-style: italic;
     text-align: center;
 }
@@ -307,17 +308,6 @@ footer{
     font-weight: 100;
     font-style: italic;
 }
-
-h1{
-    font-size: 2em;
-    font-weight: bolder;
-}
-
-h2{
-    font-size: 1.5em;
-    font-weight: bolder;
-}
-
 #portal{
     display: none;
 }
