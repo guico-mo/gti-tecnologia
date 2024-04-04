@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="css/config.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/faq.css">
     <link rel="stylesheet" href="media/wallpaper.css">
 </head>
 
@@ -42,8 +43,7 @@
             <ul class="nav-list">
                 <li><a href="#planos">Planos</a></li>
                 <li><a href="#our-services">Nossos Diferenciais</a></li>
-                <!-- <li><a href="#cobertura">Cobertura</a></li> -->
-                <!-- <li><a href="#about-us">Sobre Nós</a></li> -->
+                <li><a href="#faq">Perguntas Frequentes</a></li>
                 <li id="portal"><a href="http://6efd063e8cb0.sn.mynetname.net:8050/central/login.php"
                         target="_blank">Portal do Cliente</a></li>
             </ul>
@@ -135,14 +135,33 @@
             </div>
         </div>
     </div>
-    <!-- <div id="about-us" class="scroll-reveal about-us">
-        <h1 class="title">Sobre Nós</h1>
-        <p class="text">Nossa jornada começou com a visão de proporcionar uma experiência de internet que vai além da
-            simples conectividade. Com uma equipe apaixonada e dedicada, estamos comprometidos em levar a você o que há
-            de melhor em tecnologia, mantendo-nos à frente das demandas em constante evolução do mundo digital. Desde a
-            nossa fundação, temos investido em infraestrutura de ponta, garantindo que cada byte de dados viaje em uma
-            via expressa digital, oferecendo a você a confiança e a velocidade que merece.</p>
-    </div> -->
+    <div id="faq" class="scroll-reveal faq">
+        <h1 class="title">Perguntas Frequentes</h1>
+        <div>
+            <details>
+                <summary>Como posso acessar minha segunda via do boleto?</summary>
+                <p>Você pode acessar sua segunda via do boleto de forma rápida e fácil através do <a href="http://6efd063e8cb0.sn.mynetname.net:8050/central/login.php" target="_blank">portal do cliente</a>. Basta fazer login na sua conta, navegar até a seção financeira e lá você encontrará a opção para gerar sua segunda via do boleto.</p>
+            </details>
+            <details>
+                <summary>O que devo fazer em caso de queda de internet?</summary>
+                <p>Se você estiver enfrentando uma queda de internet, recomendamos seguir estes passos:</p>
+                <ol>
+                    <li>Verifique se há algum problema com seu roteador. Certifique-se de que todas as conexões estejam firmes e que os indicadores de status estejam normais.</li>
+                    <li>Reinicie seu roteador. Desligue o dispositivo da energia por alguns minutos e depois ligue-o novamente.</li>
+                    <li>Verifique se há interrupções no fornecimento de energia elétrica em sua área. Às vezes, problemas na rede elétrica podem afetar a distribuição da internet.</li>
+                </ol>
+                <p>Se o problema persistir, entre em contato com nosso suporte técnico para obter assistência adicional.</p>
+            </details>
+            <details>
+                <summary>Como posso entrar em contato com o suporte técnico?</summary>
+                <p>Para entrar em contato com nosso suporte técnico, nossa central atende pelo número <a href="https://wa.me/+557532212671" target="_blank">(75) 3221-2671</a>.</p>
+            </details>
+            <details>
+                <summary>O que devo fazer se a minha dúvida não estiver listada aqui?</summary>
+                <p>Se sua dúvida não estiver listada aqui, você pode entrar em contato com nossa central de atendimento pelo número <a href="https://wa.me/+557532212671" target="_blank">(75) 3221-2671</a> para obter assistência personalizada. Nossa equipe terá prazer em ajudá-lo com qualquer outra questão que possa surgir.</p>
+            </details>
+        </div>
+    </div>
     <footer id="footer" class="scroll-reveal footer">
         <div class="main-footer">
             <div class="brand-footer">
@@ -188,5 +207,26 @@
         </div>
     </footer>
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const detailsElements = document.querySelectorAll("details");
+
+        detailsElements.forEach(function (details) {
+            details.addEventListener("toggle", function () {
+                if (this.open) {
+                    closeOtherDetails(details);
+                }
+            });
+        });
+
+        function closeOtherDetails(currentDetails) {
+            detailsElements.forEach(function (details) {
+                if (details !== currentDetails && details.open) {
+                    details.open = false;
+                }
+            });
+        }
+    });
+</script>
 
 </html>

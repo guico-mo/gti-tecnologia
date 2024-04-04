@@ -234,9 +234,13 @@ body{
 }
 
 footer{
-    background-color: var(--shade-back);
     display: flex;
     justify-content: center;
+}
+
+.faq{
+    background-color: var(--shade-back);
+    padding: 10px;
 }
 
 .main-footer{

@@ -1,0 +1,16 @@
+a {
+    color: inherit;
+}
+
+details {
+    padding: 12px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+details>summary {
+    font-size: 19px;
+    font-weight: bold;
+}
